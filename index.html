@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Calculator-17</title>
+</head>
+<body>
+    <div class="container panelBody">
+        <div class="output">
+        <input type="text" id="previous-inputData" class="previousInputCss" placeholder="0"/>
+        <input type="text" id="current-inputData" class="currentInputCss" placeholder="0"/>
+    </div>
+        <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('1')">1</button>
+        <button class="btn btn-primary" onclick="getData('2')">2</button>
+        <button class="btn btn-primary" onclick="getData('3')">3</button>
+        <button class="btn btn-info" onclick="choseOperation('/')">/</button>
+    </div>  
+    <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('4')">4</button>
+        <button class="btn btn-primary" onclick="getData('5')">5</button>
+        <button class="btn btn-primary" onclick="getData('6')">6</button>
+        <button class="btn btn-info" onclick="choseOperation('*')">*</button>
+    </div> 
+    <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('7')">7</button>
+        <button class="btn btn-primary" onclick="getData('8')">8</button>
+        <button class="btn btn-primary" onclick="getData('9')">9</button>
+        <button class="btn btn-info" onclick="choseOperation('-')">-</button>
+    </div>  
+    <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('A')">A</button>
+        <button class="btn btn-primary" onclick="getData('B')">B</button>
+        <button class="btn btn-primary" onclick="getData('C')">C</button>
+        <button class="btn btn-info" onclick="choseOperation('+')">+</button>
+        
+    </div>
+    <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('D')">D</button>
+        <button class="btn btn-primary" onclick="getData('E')">E</button>
+        <button class="btn btn-primary" onclick="getData('F')">F</button>
+        <button class="btn btn-info" onclick="choseOperation('=')">=</button>
+    </div>
+    <div class="rowPad">
+        <button class="btn btn-primary" onclick="getData('G')">G</button>
+        <button class="btn btn-primary" onclick="getData('0')">0</button>
+        <button class="btn btn-info" onclick="clearAll()"> AC </button>
+</div>
+    </div>
+
+</body>
+</html>

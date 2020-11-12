@@ -1,0 +1,43 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+body{
+    padding-top: 5%;
+   width: 95%; 
+   background: rgb(255,255,255);
+   background: linear-gradient(90deg, #00ff6c 5%,#00aaff 50%, #00ff6c 95%);
+}
+.panelBody{
+    padding: 15px;
+    background-color:  rgba(155,155,155,1);
+    border-radius: 15px ;
+    width: 240px !important;
+    box-shadow: 0 0 10px #F4E552 !important;
+    
+}
+.rowPad{
+    padding: 10px;
+}
+
+
+.currentInputCss{    
+    width: 210px ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+
+.previousInputCss{    
+    width: 210px ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+
+
+
+
